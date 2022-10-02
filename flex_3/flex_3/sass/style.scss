@@ -1,0 +1,40 @@
+@import "nullstyle.scss"; //файл обнуления стилей
+
+.block__row {
+   display: flex; // элементы выстраивются в ряд
+   //align-content:stretch;//Это может запутать, но align-content отвечает за расстояние между рядами, в то время как align-items отвечает за то, как элементы в целом будут выровнены в контейнере. Когда только один ряд, align-content ни на что не влияет.
+   //flex-flow: column wrap;// несет в себе два свойства flex-direction и flex-wrap
+   //justify-content: space-between; //добавляет пространство между элементами-flex
+   align-items: center; //выстраивает элементы по вертикали
+   //flex-wrap: wrap-reverse;  //при не хватке места flex-элементы перескакивают на следущую строку(адаптируются)
+   flex-direction: column; // свойство устанавливает основную ось элементов
+
+
+   border: 20px solid #ece89d; //flex-контейнер
+   margin: 0 0 20px 0;
+}
+
+.block__column {
+   border: 20px solid #5e5373; //flex-элемент
+   //flex-basis: 500px;// управляет базовым размером flex-элемента
+   //flex-shrink:0;// дает возможность уменьшаться в размере относительно базового размера
+   //flex-grow:1;// дает возможность увеличиваться в размере относительно базового размера
+   //flex: 1 1 auto; // КРАТКАЯ ЗАПИСЬ ТРЕХ СВОЙСТВ (первая flex-grow, вторая flex-shrink, третье flex-basis)
+}
+
+.block__item {
+   background-color: #18b5a4; //сожержимое flex-элемента (контент)
+   padding: 50px;
+   font-size: 50px;
+   color: #fff;
+   font-weight: 700;
+}
+
+.block__column_1 {
+   //order: 3; // меняет порядок вывода flex-элемента (присваивает порядковый номер)
+   //align-self:flex-start;//позволяет перезаписывать функцию align-items для конкретного flex-элемента
+}
+
+.block__column_2 {}
+
+.block__column_3 {}
